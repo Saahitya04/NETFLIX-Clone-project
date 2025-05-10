@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: #000;
+    max-width: 100%;
+}
+
+.main{
+    position: relative;
+    background-image: url("assets/images/bg.png");
+    background-position: center center;
+    height: 110vh;
+}
+
+.main .op{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.75;
+    height: 110vh;
+    width: 100%;
+}
+
+nav{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 81vw;
+    height: 80px;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+nav > img {
+    width: 150px;
+}
+
+nav button{
+    height: 30px;
+}
+
+.front{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 76%;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heads{
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    text-align: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", sans-serif;;
+}
+
+.front > :nth-child(1){
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.front > :nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.front > :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.curve_boundary{
+    z-index: 2;
+    position: relative;
+    left: -15%;
+    top: 5%;
+    background: linear-gradient(
+        to right,
+        rgba(33, 13, 22, 1) 16%,
+        rgba(184, 40, 105, 1),
+        rgba(229, 9, 20, 1),
+        rgba(184, 40, 105, 1),
+        rgba(33, 13, 22, 1) 84%
+    );
+    width: 130%;
+    height: 10%;
+    /* border-radius: inherit; */
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+.curve_top {
+    position: relative;
+    z-index: 2;
+    top: -4.5%;
+    left: -15%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    width: 130%;
+    height: 10%;
+    border-top-left-radius: 50% 95%;
+    border-top-right-radius: 50% 95%;
+}
+
+.trending{
+    top: 15px;
+    left: 10%;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", sans-serif;;
+    position: relative;
+    color: white;
+}
+
