@@ -13,8 +13,8 @@
         <nav>
             <img src="assets/images/logo.svg" alt="netflix">
             <div>
-                <button>English</button>
-                <button>Sign In</button>
+                <span class = "select btn"><img src="assets/images/lang.svg" alt="" width="16" height="16">English<img src = "assets/images/down_arrow.svg"></span>
+                <span class = "btn rd_btn btn1">Sign In</span>
             </div>
         </nav>
         <div class="op"></div>
@@ -22,9 +22,9 @@
             <div class="heads">Unlimited movies, TV shows and more</div>
             <div class="heads">Starts at ₹149. Cancel at any time.</div>
             <div class="heads">Ready to watch? Enter your email to create or restart your membership.</div>
-            <div class="heads">
-                <input type="email" placeholder="Email address">
-                <button>Get Started</button>
+            <div class="heads input">
+                <input type="email" placeholder="Email address" class = "select">
+                <span class= "btn rd_btn btn2">Get Started <img src="assets/images/right_arrow.svg" alt=""></span>
             </div>
         </div>
         <div class="curve_container">
@@ -36,17 +36,21 @@
         <div class="sections">
             <div class="titles">Trending Now</div>
             <div class="recommendations">
-                <img src="assets/images/chhava.png" alt="Chhava"><span class="num" number="1">1</span>
-                <img src="assets/images/deva.png" alt="Deva"><span class="num" number="2">2</span>
-                <img src="assets/images/dragon.png" alt="Dragon"><span class="num" number="3">3</span>
-                <img src="assets/images/jewel.png" alt="Jewel Thief"><span class="num" number="4">4</span>
-                <img src="assets/images/pushpa2.png" alt="Pushpa 2"><span class="num" number="5">5</span>
+                <div><img src="assets/images/chhava.png" alt="Chhava"><span class="num" number="1">1</span></div>
+                <div><img src="assets/images/deva.png" alt="Deva"><span class="num" number="2">2</span></div>
+                <div><img src="assets/images/dragon.png" alt="Dragon"><span class="num" number="3">3</span></div>
+                <div><img src="assets/images/jewel.png" alt="Jewel Thief"><span class="num" number="4">4</span></div>
+                <div><img src="assets/images/pushpa2.png" alt="Pushpa 2"><span class="num" number="5">5</span></div>
             </div>
         </div>
         <div class="sections">
             <div class="titles">More reasons to join</div>
             <div class="cards">
                 <div class="card">
+                    <div class="card_content">
+                        <h1>Enjoy on you TV</h1>
+                        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    </div>
                     <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                         <g id="television-core-small">
                             <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
@@ -120,7 +124,10 @@
                     </svg>
                 </div>
                 <div class="card">
-
+                    <div class="card_content">
+                        <h1>Download your shows to watch offline</h1>
+                        <p>Save your favourites easily and always have something to watch.</p>
+                    </div>
                     <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                         <g id="download-core-small">
                             <path id="Vector"
@@ -199,6 +206,10 @@
                     </svg>
                 </div>
                 <div class="card">
+                    <div class="card_content">
+                        <h1>Watch everywhere</h1>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                    </div>
                     <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                         <g id="telescope-core-small">
                             <path id="Vector"
@@ -298,6 +309,11 @@
                     </svg>
                 </div>
                 <div class="card">
+                    <div class="card_content">
+                        <h1>Create profiles for kids</h1>
+                        <p>Send kids on adventures with their favourite characters in a space made just for them — free
+                            with your membership.</p>
+                    </div>
                     <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                         <g id="profiles-core-small">
                             <path id="Vector"
@@ -332,70 +348,80 @@
                                 fill="url(#paint9_radial_5179_7919)"></path>
                         </g>
                         <defs>
-                            <radialGradient id="paint0_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint0_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(39.075 17.6882) rotate(135) scale(32.8097)">
                                 <stop stop-color="#99421D"></stop>
                                 <stop offset="0.333333" stop-color="#99161D"></stop>
                                 <stop offset="0.666667" stop-color="#7D1845"></stop>
                                 <stop offset="1" stop-color="#59216E"></stop>
                             </radialGradient>
-                            <radialGradient id="paint1_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint1_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(62.4 8.70157) rotate(133.87) scale(75.3216)">
                                 <stop stop-color="#FFDCCC"></stop>
                                 <stop offset="0.333333" stop-color="#FFBDC0"></stop>
                                 <stop offset="0.666667" stop-color="#F89DC6"></stop>
                                 <stop offset="1" stop-color="#E4A1FA"></stop>
                             </radialGradient>
-                            <radialGradient id="paint2_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint2_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(60.3 11.1008) rotate(133.939) scale(68.7426 55.9547)">
                                 <stop stop-color="#99421D"></stop>
                                 <stop offset="0.333333" stop-color="#99161D"></stop>
                                 <stop offset="0.666667" stop-color="#7D1845"></stop>
                                 <stop offset="1" stop-color="#59216E"></stop>
                             </radialGradient>
-                            <radialGradient id="paint3_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint3_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(60.3 11.1008) rotate(133.939) scale(68.7426 55.9547)">
                                 <stop stop-color="#99421D"></stop>
                                 <stop offset="0.333333" stop-color="#99161D"></stop>
                                 <stop offset="0.666667" stop-color="#7D1845"></stop>
                                 <stop offset="1" stop-color="#59216E"></stop>
                             </radialGradient>
-                            <radialGradient id="paint4_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint4_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(60.3 11.0994) rotate(133.939) scale(68.7426 55.9548)">
                                 <stop stop-color="#99421D"></stop>
                                 <stop offset="0.333333" stop-color="#99161D"></stop>
                                 <stop offset="0.666667" stop-color="#7D1845"></stop>
                                 <stop offset="1" stop-color="#59216E"></stop>
                             </radialGradient>
-                            <radialGradient id="paint5_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint5_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(39.6 27.9016) rotate(135) scale(23.3345)">
                                 <stop stop-color="#FFA984"></stop>
                                 <stop offset="0.333333" stop-color="#FF787F"></stop>
                                 <stop offset="0.666667" stop-color="#F45FA2"></stop>
                                 <stop offset="1" stop-color="#C44AF1"></stop>
                             </radialGradient>
-                            <radialGradient id="paint6_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint6_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(61.8 29.7016) rotate(135) scale(43.2749)">
                                 <stop stop-color="#EF7744"></stop>
                                 <stop offset="0.333333" stop-color="#E50914"></stop>
                                 <stop offset="0.666667" stop-color="#A70D53"></stop>
                                 <stop offset="1" stop-color="#792A95"></stop>
                             </radialGradient>
-                            <radialGradient id="paint7_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint7_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(62.1 11.1008) rotate(137.146) scale(73.6614 60.3576)">
                                 <stop stop-color="#FFDCCC"></stop>
                                 <stop offset="0.333333" stop-color="#FDF6F6"></stop>
                                 <stop offset="0.666667" stop-color="#FADCE9"></stop>
                                 <stop offset="1" stop-color="#E4A1FA"></stop>
                             </radialGradient>
-                            <radialGradient id="paint8_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint8_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(62.1 11.1008) rotate(137.146) scale(73.6614 60.3576)">
                                 <stop stop-color="#FFDCCC"></stop>
                                 <stop offset="0.333333" stop-color="#FDF6F6"></stop>
                                 <stop offset="0.666667" stop-color="#FADCE9"></stop>
                                 <stop offset="1" stop-color="#E4A1FA"></stop>
                             </radialGradient>
-                            <radialGradient id="paint9_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            <radialGradient id="paint9_radial_5179_7919" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(62.1 11.1017) rotate(137.146) scale(73.6614 60.3576)">
                                 <stop stop-color="#FFDCCC"></stop>
                                 <stop offset="0.333333" stop-color="#FDF6F6"></stop>
@@ -409,6 +435,14 @@
         </div>
         <div class="sections">
             <div class="titles">Frequently Asked Questions</div>
+            <div class="options">
+                <div class="option">What is Netflix?<img src="assets/images/plus.svg" alt=""></div>
+                <div class="option">How much does Netflix Cost?<img src="assets/images/plus.svg" alt=""></div>
+                <div class="option">Where can I watch?<img src="assets/images/plus.svg" alt=""></div>
+                <div class="option">How do I cancel?<img src="assets/images/plus.svg" alt=""></div>
+                <div class="option">What can I watch on Netflix?<img src="assets/images/plus.svg" alt=""></div>
+                <div class="option">Is Netflix good for kids?<img src="assets/images/plus.svg" alt=""></div>
+            </div>
         </div>
     </main>
 
