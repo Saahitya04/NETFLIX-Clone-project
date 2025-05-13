@@ -14,7 +14,7 @@ body{
     max-width: 100%;
 }
 
-.main{
+.header{
     position: relative;
     z-index: 1;
     background-image: url("assets/images/bg.png");
@@ -22,7 +22,7 @@ body{
     height: 800px;
 }
 
-.main .op{
+.header .op{
     position: absolute;
     z-index: -1;
     top: 0;
@@ -127,6 +127,25 @@ nav button{
     border-radius: inherit;
 }
 
+main{
+    position: relative;
+    display: grid;
+    gap: 30px;
+}
+
+.sections{
+    display: grid;
+    position: relative;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+main > :nth-child(2){
+    top: 50px;
+}
+
 .titles{
     position: relative;
     top: 10%;
@@ -140,22 +159,21 @@ nav button{
 
 .recommendations{
     width: 100%;
-    position: relative;
     top: 30px;
     display: flex;
     min-width: 100%;
     justify-content: center;
     align-content: center;
-    /* gap: 10px; */
     flex-wrap: wrap;
     flex-shrink: none;
 }
 
 .recommendations > img{
     position: relative;
+    z-index: 4;
     width: 180px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .recommendations > .num{
@@ -170,6 +188,33 @@ nav button{
     font-weight: 700;
     -webkit-text-fill-color: black;
     -webkit-text-stroke: 1px white;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-shrink: none;
+    gap: 17px;
+}
+
+.card{
+    position: relative;
+    width: 288px;
+    height: 278.4px;
+    background: linear-gradient(
+                    149deg,
+                    #192247 0%,
+                    #210e17 96.86%
+                );
+    border-radius: 20px;
+}
+
+.card > svg{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 @media only screen and (max-width: 900px) {
