@@ -23,7 +23,7 @@ body {
     z-index: 1;
     background-image: url("assets/images/bg.png");
     background-position: center center;
-    height: 800px;
+    height: 52vw;
 }
 
 .header .op {
@@ -32,7 +32,7 @@ body {
     top: 0;
     background-color: black;
     opacity: 0.75;
-    height: 800px;
+    height: 53vw;
     width: 100%;
 }
 
@@ -117,8 +117,7 @@ nav>div {
 }
 
 .heads {
-    max-width: 583px;
-    min-width: 583px;
+    width: 583px;
     position: relative;
     z-index: 2;
     align-self: center;
@@ -150,7 +149,7 @@ nav>div {
 }
 
 .heads>input {
-    width: 63%;
+    width: 367px;
 }
 
 .btn2 {
@@ -207,7 +206,7 @@ main {
 .sections {
     display: grid;
     position: relative;
-    top: -26px;
+    top: 20px;
     height: auto;
     width: 100%;
     grid-template-columns: 1fr;
@@ -458,6 +457,14 @@ footer .select {
 }
 
 @media only screen and (max-width: 1280px) {
+    .header {
+        height: 760px;
+    }
+
+    .header .op {
+        height: 760px;
+    }
+
     .front> :nth-child(1) {
         font-size: 40px;
         font-weight: 700;
@@ -474,8 +481,7 @@ footer .select {
     }
 
     .heads {
-        max-width: 508px;
-        min-width: 508px;
+        width: 508px;
     }
 
     .btn2 {
@@ -519,7 +525,7 @@ footer .select {
     }
 
     .sections:not(.first_section) {
-        top: -54px;
+        top: -4px;
     }
 
     .card {
@@ -562,7 +568,15 @@ footer .select {
 
 @media only screen and (max-width: 960px) {
     body{
-        margin-bottom: 100px;
+        margin-bottom: 120px;
+    }
+
+    .header {
+        height: 619px;
+    }
+
+    .header .op {
+        height: 619px;
     }
 
     nav {
@@ -570,7 +584,14 @@ footer .select {
     }
 
     nav>img{
+        position: relative;
+        left: 26px;
         width: 88.8px
+    }
+
+    nav>div {
+        position: relative;
+        right: 26px;
     }
 
     .front> :nth-child(1) {
@@ -589,8 +610,7 @@ footer .select {
     }
 
     .heads {
-        max-width: 432px;
-        min-width: 432px;
+        width: 432px;
     }
 
     .curve_top {
@@ -599,6 +619,7 @@ footer .select {
     }
 
     .sections {
+        top: 0px;
         margin-bottom: 14px;
     }
 
@@ -624,8 +645,8 @@ footer .select {
     }
 
     .first_section {
-        grid-template-columns: 92% 6%;
-        column-gap: 1%;
+        grid-template-columns: 91% 5%;
+        column-gap: 3%;
         margin-bottom: 40px;
         row-gap: 7px;
     }
@@ -653,7 +674,7 @@ footer .select {
     }
 
     .final_footer_container {
-        top: -47px;
+        top: 20px;
     }
 
     .final .input {
@@ -671,5 +692,103 @@ footer .select {
     .links {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 55%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    body{
+        margin-bottom: 120px;
+    }
+
+    nav .select > span {
+        display: none;
+    }
+
+    nav>img{
+        position: absolute;
+        top: 32px;
+        left: 26px;
+    }
+
+    nav>div {
+        position: absolute;
+        top: 32px;
+        right: 26px;
+    }
+
+    .front> :nth-child(1) {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .front> :nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .front> :nth-child(3) {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .input{
+        flex-wrap: wrap;
+    }
+
+    .heads {
+        width: 90%;
+    }
+
+    .input > .select {
+        max-width: 534px;
+        height: 48px;
+    }
+
+    .heads > .btn2 {
+        max-width: 160.94px;
+        min-width: 160.94px;
+        height: 48px;
+        border-radius: 3px;
+        gap: 4px;
+    }
+
+    .curve_top {
+        width: 200%;
+        left: -50%;
+    }
+
+    .sections {
+        top: 0px;
+        margin-bottom: 14px;
+    }
+
+    .sections:not(.first_section) {
+        top: -24px;
+    }
+
+    .option{
+        padding-left: 0px 24px;
+        align-items: center;
+    }
+
+    .final {
+        align-items: flex-start;
+    }
+
+    .final .input {
+        justify-content: left;
+        width: 100%;
+    }
+
+    .final .select {
+        width: 100%;
+    }
+
+    footer {
+        width: 93%;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
     }
 }
