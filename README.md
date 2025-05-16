@@ -67,6 +67,6 @@ netflix-clone/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/netflix-clone-html-css.git
-   cd netflix-clone-html-css
+   [git clone https://github.com/your-username/netflix-clone-html-css.git
+   cd netflix-clone-html-css](https://github.com/Saahitya04/NETFLIX-Clone-project.git)
 
