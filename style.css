@@ -364,7 +364,7 @@ main {
     transform: rotate(45deg);
 }
 
-.final_footer_container{
+.final_footer_container {
     position: relative;
 }
 
@@ -567,7 +567,7 @@ footer .select {
 }
 
 @media only screen and (max-width: 960px) {
-    body{
+    body {
         margin-bottom: 120px;
     }
 
@@ -583,7 +583,7 @@ footer .select {
         gap: 51%;
     }
 
-    nav>img{
+    nav>img {
         position: relative;
         left: 26px;
         width: 88.8px
@@ -696,15 +696,15 @@ footer .select {
 }
 
 @media only screen and (max-width: 620px) {
-    body{
+    body {
         margin-bottom: 120px;
     }
 
-    nav .select > span {
+    nav .select>span {
         display: none;
     }
 
-    nav>img{
+    nav>img {
         position: absolute;
         top: 32px;
         left: 26px;
@@ -731,7 +731,7 @@ footer .select {
         font-weight: 400;
     }
 
-    .input{
+    .input {
         flex-wrap: wrap;
     }
 
@@ -739,12 +739,12 @@ footer .select {
         width: 90%;
     }
 
-    .input > .select {
+    .input>.select {
         max-width: 534px;
         height: 48px;
     }
 
-    .heads > .btn2 {
+    .heads>.btn2 {
         max-width: 160.94px;
         min-width: 160.94px;
         height: 48px;
@@ -762,11 +762,18 @@ footer .select {
         margin-bottom: 14px;
     }
 
+    .first_section {
+        grid-template-columns: 89% 8%;
+        column-gap: 2%;
+        margin-bottom: 40px;
+        row-gap: 7px;
+    }
+
     .sections:not(.first_section) {
         top: -24px;
     }
 
-    .option{
+    .option {
         padding-left: 0px 24px;
         align-items: center;
     }
