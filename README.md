@@ -71,5 +71,7 @@ netflix-clone/
    cd netflix-clone-html-css](https://github.com/Saahitya04/NETFLIX-Clone-project.git)
 2. Open index.html in your browser.
 
+---
+
 ## License
 This project is for educational purposes only and not intended for commercial use. All rights to the Netflix name and assets belong to their respective owners.
