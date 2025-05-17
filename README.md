@@ -32,7 +32,7 @@ A fully responsive **Netflix homepage clone** built using just **HTML and CSS**.
 
 ## Live Demo
 
-🔗 [Click here to view live](https://saahitya04.github.io/NETFLIX-Clone-project/)  
+🔗 [Click here to view live](https://saahitya04.github.io/Streaming-Website-Clone-project/)  
 
 ---
 
